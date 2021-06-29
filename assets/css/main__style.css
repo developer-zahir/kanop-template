@@ -2,6 +2,92 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.navbar {
+  padding: 50px 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  padding: 50px 100px !important;
+}
+
+.navbar .nav-pills {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.navbar .nav-pills li a {
+  text-transform: uppercase;
+  font-family: "roboto";
+  font-weight: 600;
+  color: #777;
+  -webkit-transition: .4s;
+  transition: .4s;
+  position: relative;
+}
+
+.navbar .nav-pills li a:hover {
+  color: #000;
+}
+
+.navbar .nav-pills li a:hover::before {
+  width: 100%;
+}
+
+.navbar .nav-pills li a::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #000;
+  -webkit-transition: .4s;
+  transition: .4s;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.navbar .nav-pills li .active {
+  color: #000;
+  background: transparent;
+}
+
+.navbar .nav-pills li .active::before {
+  width: 60%;
+  left: 0;
+}
+
+.sticky-top {
+  background: #ffffff !important;
+  padding: 10px 100px !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #fddd2f;
+}
+
+.sticky-top .navbar-brand {
+  display: none;
+}
+
+.sticky-top .nav-pills {
+  text-align: center;
+}
+
+.sticky-top .nav-pills li a {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #777;
+  font-family: "roboto";
+}
+
+.sticky-top .nav-pills li .active {
+  color: #333;
+}
+
+.sticky-top .nav-pills li .active::before {
+  width: 100%;
+  background: black;
+}
+
+/*============== (~ frist__section ~) =================*/
 .frist__section {
   padding: 160px 0;
   background: #fddd2f;

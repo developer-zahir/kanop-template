@@ -26,9 +26,35 @@
     <title>Home - Kanop.</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <nav id="navbar" class="navbar navbar-light bg-light px-3 ">
+        <a class="navbar-brand" href="#"><img src="assets/image/logo.png" alt=""></a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="#home">home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#work">work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#footer">footer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#pages">pages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#shop">shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">contact</a>
+            </li>
+        </ul>
+    </nav>
     <section>
-        <div class="frist__section">
+        <div class="frist__section" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-12">
@@ -39,7 +65,7 @@
         </div>
     </section>
     <section>
-        <div class="protfolio__section">
+        <div class="protfolio__section" id="work">
             <div class="container-fluid">
                 <div class="row g-0">
                     <!-- protfolio item -->
@@ -211,7 +237,7 @@
         </div>
     </section>
     <section>
-        <div class="footer__top__section">
+        <div class="footer__top__section" id="footer">
             <div class="container-fluid">
                 <div class="footer_main_row">
 
@@ -329,17 +355,44 @@
         </div>
     </footer>
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script> -->
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/scroll to top.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+
     <script>
+        // sticy nav==============
         $('body').materialScrollTop();
+        window.onscroll = function () { myFunction() };
+        var header = document.getElementById("navbar");
+        var sticky = header.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky-top");
+            } else {
+                header.classList.remove("sticky-top");
+            }
+        }
+        //ScrollSpy ========================
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar'
+        })
+
+
+
+
+
+
+
+
+
+
+
+
 
         // sorch code dekha jabe na------------------------
-
         $(document).keypress('u', function (e) {
             if (e.ctrlKey) {
                 return false;
