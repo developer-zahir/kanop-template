@@ -337,7 +337,22 @@
     <script src="assets/js/scroll to top.js"></script>
     <script>
         $('body').materialScrollTop();
-      </script>
+
+        // sorch code dekha jabe na------------------------
+
+        $(document).keypress('u', function (e) {
+            if (e.ctrlKey) {
+                return false;
+            } else {
+                return true;
+            }
+        });
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+
+    </script>
 </body>
 
 </html>
