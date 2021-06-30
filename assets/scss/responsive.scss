@@ -10,11 +10,15 @@ $font_two: 'Raleway', sans-serif;
     .protfolio__section .protfolio_bottom {
         width: 53%;
     }
+    .frist__section {
+        height: 65vh;
+    }
 }
 //media query
 @media all and (max-width: 1210px) {
     .frist__section {
         overflow: auto;
+        
         .header__content {
             float: right;
             margin: auto;
@@ -24,6 +28,10 @@ $font_two: 'Raleway', sans-serif;
                 line-height: 50px !important;
             }
         }
+
+    }
+    .frist__section {
+        height: 55vh;
     }
     .footer__top__section .footer_main_row {
         flex-wrap: wrap;
@@ -110,6 +118,9 @@ $font_two: 'Raleway', sans-serif;
     .protfolio__section {
         padding: 60px 40px 0 40px;
     }
+    .frist__section {
+        height: 55vh;
+    }
 }
 #mobile_menu {
     display: none;
@@ -117,6 +128,12 @@ $font_two: 'Raleway', sans-serif;
 .navbar-brand h1 {
     display: none;
 }
+//media query
+@media all and (max-width:1081px) { 
+    .frist__section {
+        height: 49vh;
+    }
+ }
 //nav-pills=================moble menu===============
 @media all and (max-width: 1000px) {
     .sticky-top {
@@ -247,6 +264,11 @@ $font_two: 'Raleway', sans-serif;
             }
         }
     }
+    #mobile_menu:checked ~ .nav-pills {
+        opacity: 1;
+        visibility: visible;
+        height: 49vh !important;
+    }
 }
 //media query
 @media all and (max-width: 900px) {
@@ -257,7 +279,6 @@ $font_two: 'Raleway', sans-serif;
 //media query
 @media all and (max-width: 769px) {
     .frist__section {
-        height: 70vh;
         .header__content {
             h1 {
                 font-size: 30px;
@@ -270,6 +291,9 @@ $font_two: 'Raleway', sans-serif;
                 font-size: 15px;
             }
         }
+    }
+    .frist__section {
+        height: 44vh;
     }
     .frist__section .header__content a {
         padding: 9px 62px;
@@ -289,6 +313,11 @@ $font_two: 'Raleway', sans-serif;
     }
     #navbar {
         padding: 0 40px !important;
+    }
+    #mobile_menu:checked ~ .nav-pills {
+        opacity: 1;
+        visibility: visible;
+        height: 44vh !important;
     }
 }
 body > .material-scrolltop {
@@ -361,7 +390,7 @@ body > .material-scrolltop {
         }
     }
     .frist__section {
-        height: 60vh;
+        height: 34vh;
     }
     #navbar {
         padding: 6px 30px !important;
@@ -374,6 +403,9 @@ body > .material-scrolltop {
     }
     .nav-pills li {
         margin: 3px 0 !important;
+    }
+    #mobile_menu:checked ~ .nav-pills {
+        height: 34vh !important;
     }
 }
 
@@ -413,6 +445,12 @@ body > .material-scrolltop {
     .protfolio__section {
         padding: 3px 0 0 0;
     }
+    .frist__section {
+        height: 30vh;
+    }
+    #mobile_menu:checked ~ .nav-pills {
+        height: 30vh !important;
+    }
 }
 //media query
 @media all and (max-width: 280px) {
@@ -424,6 +462,9 @@ body > .material-scrolltop {
         line-height: 20px !important;
     }
     .frist__section {
-        height: 43vh;
+        height:26vh;
+    }
+    #mobile_menu:checked ~ .nav-pills {
+        height: 26vh !important;
     }
 }

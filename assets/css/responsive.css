@@ -7,6 +7,9 @@
   .protfolio__section .protfolio_bottom {
     width: 53%;
   }
+  .frist__section {
+    height: 65vh;
+  }
 }
 
 @media all and (max-width: 1210px) {
@@ -21,6 +24,9 @@
   .frist__section .header__content h1 {
     font-size: 45px;
     line-height: 50px !important;
+  }
+  .frist__section {
+    height: 55vh;
   }
   .footer__top__section .footer_main_row {
     -ms-flex-wrap: wrap;
@@ -105,6 +111,9 @@
   .protfolio__section {
     padding: 60px 40px 0 40px;
   }
+  .frist__section {
+    height: 55vh;
+  }
 }
 
 #mobile_menu {
@@ -113,6 +122,12 @@
 
 .navbar-brand h1 {
   display: none;
+}
+
+@media all and (max-width: 1081px) {
+  .frist__section {
+    height: 49vh;
+  }
 }
 
 @media all and (max-width: 1000px) {
@@ -251,6 +266,11 @@
     color: #ffff !important;
     background: #333333 !important;
   }
+  #mobile_menu:checked ~ .nav-pills {
+    opacity: 1;
+    visibility: visible;
+    height: 49vh !important;
+  }
 }
 
 @media all and (max-width: 900px) {
@@ -260,9 +280,6 @@
 }
 
 @media all and (max-width: 769px) {
-  .frist__section {
-    height: 70vh;
-  }
   .frist__section .header__content h1 {
     font-size: 30px;
     line-height: 30px;
@@ -272,6 +289,9 @@
     font-weight: 300;
     padding: 0 32px;
     font-size: 15px;
+  }
+  .frist__section {
+    height: 44vh;
   }
   .frist__section .header__content a {
     padding: 9px 62px;
@@ -293,6 +313,11 @@
   }
   #navbar {
     padding: 0 40px !important;
+  }
+  #mobile_menu:checked ~ .nav-pills {
+    opacity: 1;
+    visibility: visible;
+    height: 44vh !important;
   }
 }
 
@@ -361,7 +386,7 @@ body > .material-scrolltop {
     display: none;
   }
   .frist__section {
-    height: 60vh;
+    height: 34vh;
   }
   #navbar {
     padding: 6px 30px !important;
@@ -374,6 +399,9 @@ body > .material-scrolltop {
   }
   .nav-pills li {
     margin: 3px 0 !important;
+  }
+  #mobile_menu:checked ~ .nav-pills {
+    height: 34vh !important;
   }
 }
 
@@ -423,6 +451,12 @@ body > .material-scrolltop {
   .protfolio__section {
     padding: 3px 0 0 0;
   }
+  .frist__section {
+    height: 30vh;
+  }
+  #mobile_menu:checked ~ .nav-pills {
+    height: 30vh !important;
+  }
 }
 
 @media all and (max-width: 280px) {
@@ -434,7 +468,10 @@ body > .material-scrolltop {
     line-height: 20px !important;
   }
   .frist__section {
-    height: 43vh;
+    height: 26vh;
+  }
+  #mobile_menu:checked ~ .nav-pills {
+    height: 26vh !important;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
