@@ -106,7 +106,7 @@ $font_two: 'Raleway', sans-serif;
                 font-family: $font_two;
             }
         }
-        a{
+        a {
             display: inline-block;
             text-transform: uppercase;
             text-decoration: none;
@@ -115,28 +115,28 @@ $font_two: 'Raleway', sans-serif;
             color: rgb(0, 0, 0);
             background: rgba(0, 0, 0, 0);
             padding: 12px 80px;
-            transition: .4s;
+            transition: 0.4s;
             position: relative;
             font-size: 17px;
             font-weight: 500;
-            &:hover{
-                &::before{
+            &:hover {
+                &::before {
                     width: 100%;
                     left: 0;
                 }
                 color: #fff;
                 border-color: #fff;
             }
-            &::before{
+            &::before {
                 content: '';
                 width: 0;
                 right: 0;
                 position: absolute;
                 top: 0;
                 height: 100%;
-                transition: .4s;
-                    z-index: -1;
-                    background: #000;
+                transition: 0.4s;
+                z-index: -1;
+                background: #000;
             }
         }
     }
@@ -419,7 +419,7 @@ footer {
         button.material-scrolltop.reveal {
             display: inline-block;
             &:hover {
-               border-color: rgb(255, 255, 255);
+                border-color: rgb(255, 255, 255);
             }
         }
         > p {
@@ -451,8 +451,8 @@ footer {
         li {
             list-style: none;
             border-left: 1px solid #ddd;
-                    transition: 0.4s;
-                    padding: 9px 19px;
+            transition: 0.4s;
+            padding: 9px 19px;
             a {
                 color: #fff;
                 display: inline-block;
@@ -471,4 +471,15 @@ footer {
             }
         }
     }
+}
+footer {
+    background: #323232;
+    padding: 33px 76px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    align-items: center;
+    justify-content: space-between;
 }

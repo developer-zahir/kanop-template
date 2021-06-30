@@ -107,6 +107,152 @@
   }
 }
 
+#mobile_menu {
+  display: none;
+}
+
+.navbar-brand h1 {
+  display: none;
+}
+
+@media all and (max-width: 1000px) {
+  .sticky-top {
+    display: none;
+  }
+  nav#navbar {
+    position: relative;
+    background: #333 !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav#navbar .navbar-brand img {
+    display: none;
+  }
+  nav#navbar .navbar-brand h1 {
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    font-size: 45px;
+  }
+  nav#navbar .navbar-brand h1::first-letter {
+    color: #fddd2f;
+    text-transform: uppercase;
+  }
+  nav#navbar .navbar-brand h1 span {
+    display: inline-block;
+    color: red;
+  }
+  #mobile__menu__toggle {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #4c4c4c;
+  }
+  #mobile__menu__toggle label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #mobile__menu__toggle label::before {
+    content: '\f0c9';
+    font-family: 'font awesome 5 free';
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    font-size: 20px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  #mobile__menu__toggle label::after {
+    content: '\f00d';
+    font-family: 'font awesome 5 free';
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    font-size: 20px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #mobile_menu:checked ~ .nav-pills {
+    opacity: 1;
+    visibility: visible;
+    height: 100vh !important;
+  }
+  #mobile_menu:checked + #mobile__menu__toggle label::before {
+    opacity: 0;
+    visibility: hidden;
+  }
+  #mobile_menu:checked + #mobile__menu__toggle label::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  #navbar {
+    display: block;
+  }
+  .nav-pills {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    z-index: 44;
+    background: #4c4c4c;
+    width: 100%;
+    padding: 15px 10px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: 0;
+    resize: vertical;
+    text-align: left !important;
+  }
+  .nav-pills li {
+    margin: 10px 0 !important;
+    padding: 0 17px !important;
+    display: block;
+  }
+  .nav-pills li a {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    padding: 7px 15px !important;
+    display: block;
+    color: rgba(221, 221, 221, 0.87) !important;
+  }
+  .nav-pills li a::before {
+    content: '';
+    display: none;
+  }
+  .nav-pills li a:hover {
+    color: #ffff;
+    background: #333333;
+  }
+  .nav-pills li .active {
+    color: #ffff !important;
+    background: #333333 !important;
+  }
+}
+
 @media all and (max-width: 900px) {
   footer {
     padding: 50px 30px;
@@ -144,6 +290,9 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  #navbar {
+    padding: 0 40px !important;
   }
 }
 
@@ -203,16 +352,32 @@ body > .material-scrolltop {
   .footer__top__section .footer__item h1 {
     font-size: 55px;
   }
-}
-
-@media all and (max-width: 446px) {
   .frist__section .header__content h1 {
     font-size: 25px !important;
     line-height: 27px !important;
+    margin-bottom: 20px;
   }
   .frist__section .header__content p {
     display: none;
   }
+  .frist__section {
+    height: 60vh;
+  }
+  #navbar {
+    padding: 6px 30px !important;
+  }
+  nav#navbar .navbar-brand h1 {
+    font-size: 30px;
+  }
+  #mobile_menu:checked ~ .nav-pills {
+    height: 55vh !important;
+  }
+  .nav-pills li {
+    margin: 3px 0 !important;
+  }
+}
+
+@media all and (max-width: 446px) {
   .frist__section .header__content a {
     padding: 5px 45px;
     margin-top: 10px;
