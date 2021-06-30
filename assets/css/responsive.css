@@ -394,14 +394,14 @@ body > .material-scrolltop {
   nav#navbar .navbar-brand h1 {
     font-size: 30px;
   }
-  #mobile_menu:checked ~ .nav-pills {
-    height: 55vh !important;
-  }
   .nav-pills li {
     margin: 3px 0 !important;
   }
+  .frist__section {
+    height: 54vh;
+  }
   #mobile_menu:checked ~ .nav-pills {
-    height: 34vh !important;
+    height: 54vh !important;
   }
 }
 
@@ -451,11 +451,8 @@ body > .material-scrolltop {
   .protfolio__section {
     padding: 3px 0 0 0;
   }
-  .frist__section {
-    height: 30vh;
-  }
   #mobile_menu:checked ~ .nav-pills {
-    height: 30vh !important;
+    height: 54vh !important;
   }
 }
 

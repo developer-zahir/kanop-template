@@ -18,7 +18,7 @@ $font_two: 'Raleway', sans-serif;
 @media all and (max-width: 1210px) {
     .frist__section {
         overflow: auto;
-        
+
         .header__content {
             float: right;
             margin: auto;
@@ -28,7 +28,6 @@ $font_two: 'Raleway', sans-serif;
                 line-height: 50px !important;
             }
         }
-
     }
     .frist__section {
         height: 55vh;
@@ -129,11 +128,11 @@ $font_two: 'Raleway', sans-serif;
     display: none;
 }
 //media query
-@media all and (max-width:1081px) { 
+@media all and (max-width: 1081px) {
     .frist__section {
         height: 49vh;
     }
- }
+}
 //nav-pills=================moble menu===============
 @media all and (max-width: 1000px) {
     .sticky-top {
@@ -398,14 +397,17 @@ body > .material-scrolltop {
     nav#navbar .navbar-brand h1 {
         font-size: 30px;
     }
-    #mobile_menu:checked ~ .nav-pills {
-        height: 55vh !important;
-    }
+
     .nav-pills li {
         margin: 3px 0 !important;
     }
+
+    .frist__section {
+        height: 54vh;
+    }
+
     #mobile_menu:checked ~ .nav-pills {
-        height: 34vh !important;
+        height: 54vh !important;
     }
 }
 
@@ -445,11 +447,9 @@ body > .material-scrolltop {
     .protfolio__section {
         padding: 3px 0 0 0;
     }
-    .frist__section {
-        height: 30vh;
-    }
+
     #mobile_menu:checked ~ .nav-pills {
-        height: 30vh !important;
+        height: 54vh !important;
     }
 }
 //media query
@@ -462,7 +462,7 @@ body > .material-scrolltop {
         line-height: 20px !important;
     }
     .frist__section {
-        height:26vh;
+        height: 26vh;
     }
     #mobile_menu:checked ~ .nav-pills {
         height: 26vh !important;
