@@ -273,7 +273,8 @@
                             <li><a href="#">Amazon has no problem hiring in UK despite Brexit</a></li>
                             <li><a href="#">Paytm teams up with AGTech Media to set up a gaming company</a></li>
                             <li><a href="#">Moto Z2 Force smartphone with shatterproof display to launch today</a></li>
-                            <li><a href="#">Telcos citing Trai affidavit on network charge twists facts, claims COAI</a></li>
+                            <li><a href="#">Telcos citing Trai affidavit on network charge twists facts, claims COAI</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -351,14 +352,16 @@
     </section>
     <footer>
         <div class="f__item ">
-            <p>© 2017 All rights reserved by <a href="https://www.facebook.com/mdzahirulislam.official/">Md Zahirul Islam</a></p>
+            <p>© 2017 All rights reserved by <a href="https://www.facebook.com/mdzahirulislam.official/">Md Zahirul
+                    Islam</a></p>
         </div>
         <div id="scrool_to_top">
             <button class="material-scrolltop" type="button"></button>
         </div>
         <div class="text-end one">
             <ul>
-                <li><a href="https://www.facebook.com/mdzahirulislam.official/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.facebook.com/mdzahirulislam.official/"><i class="fab fa-facebook-f"></i></a>
+                </li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                 <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
@@ -367,30 +370,21 @@
         </div>
     </footer>
     <button class="material-scrolltop" type="button"></button>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/scroll to top.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script> -->
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/cus.js"></script>
     <script>
-        $('body').materialScrollTop();
-        //ScrollSpy ========================
-        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-            target: '#navbar'
-        })
-        AOS.init();
-        // sticy nav==============
-        $(window).scroll(function () {
-            var sticky = $('.navbar'),
-                scroll = $(window).scrollTop();
-            if (scroll >= 120) sticky.addClass('sticky-top opacity');
-            else sticky.removeClass('sticky-top opacity');
-        });
-
-        // sorch code dekha jabe na------------------------
+        //   inspect kora jabe na=================
+        document.onkeydown = function (e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+                return false;
+            } else {
+                return true;
+            }
+        };
         $(document).keypress('u', function (e) {
             if (e.ctrlKey) {
                 return false;
@@ -401,7 +395,6 @@
         document.addEventListener('contextmenu', function (e) {
             e.preventDefault();
         });
-
     </script>
 </body>
 
